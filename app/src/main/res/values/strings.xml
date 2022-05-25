@@ -2,4 +2,15 @@
     <string name="app_name">IMC</string>
     <string name="image_illustration_for_welcome_page">Image illustration for welcome page</string>
     <string name="button_next">Illustration next</string>
+    <string name="welcome_to_your_personal_health_tracker">Welcome to your personal health tracker</string>
+    <string name="give_us_some_basic_information">Give us some basic information</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="height">Height</string>
+    <string name="_300cm">300cm</string>
+    <string name="_50cm">50cm</string>
+    <string name="weight">Weight</string>
+    <string name="_10kg">10kg</string>
+    <string name="_300kg">300kg</string>
+    <string name="_30kg">30kg</string>
 </resources>

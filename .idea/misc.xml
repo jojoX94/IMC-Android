@@ -3,8 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/afit/Documents/Dev Mobile/Workspace/IMC/app/src/main/res/drawable/bc_gender_selected.xml" value="0.2265" />
+        <entry key="..\:/Users/afit/Documents/Dev Mobile/Workspace/IMC/app/src/main/res/drawable/bc_gender_unselected.xml" value="0.2265" />
+        <entry key="..\:/Users/afit/Documents/Dev Mobile/Workspace/IMC/app/src/main/res/drawable/border_selection_gender.xml" value="0.2265" />
+        <entry key="..\:/Users/afit/Documents/Dev Mobile/Workspace/IMC/app/src/main/res/drawable/selection_gender.xml" value="0.2265" />
+        <entry key="..\:/Users/afit/Documents/Dev Mobile/Workspace/IMC/app/src/main/res/drawable/thumb_seekbar.xml" value="0.1" />
         <entry key="..\:/Users/afit/Documents/Dev Mobile/Workspace/IMC/app/src/main/res/layout-land/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/afit/Documents/Dev Mobile/Workspace/IMC/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/afit/Documents/Dev Mobile/Workspace/IMC/app/src/main/res/layout/activity_selection.xml" value="0.4375" />
       </map>
     </option>
   </component>
