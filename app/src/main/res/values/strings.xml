@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">IMC</string>
+    <string name="image_illustration_for_welcome_page">Image illustration for welcome page</string>
+    <string name="button_next">Illustration next</string>
+</resources>
