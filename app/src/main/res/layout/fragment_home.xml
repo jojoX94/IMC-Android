@@ -24,12 +24,19 @@
             android:textColor="@color/bl"
             android:textSize="32sp"
             android:textStyle="normal|bold"
-            app:layout_constraintEnd_toEndOf="@+id/checkBox3"
-            app:layout_constraintStart_toStartOf="@+id/checkBox4"
+            app:layout_constraintEnd_toEndOf="@+id/check_women"
+            app:layout_constraintStart_toStartOf="@+id/check_men"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <CheckBox
-            android:id="@+id/checkBox3"
+        <com.futurmap.imc.utils.ConstraintRadioGroup
+            android:id="@+id/radioGroup_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="check_women,check_men"
+            tools:ignore="MissingConstraints" />
+
+        <RadioButton
+            android:id="@+id/check_women"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
@@ -37,17 +44,17 @@
             android:button="@drawable/checkbox_women"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/checkBox4"
+            app:layout_constraintStart_toEndOf="@+id/check_men"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-        <CheckBox
-            android:id="@+id/checkBox4"
+        <RadioButton
+            android:id="@+id/check_men"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             android:background="@drawable/selection_gender"
             android:button="@drawable/checkbox_men"
-            app:layout_constraintEnd_toStartOf="@+id/checkBox3"
+            app:layout_constraintEnd_toStartOf="@+id/check_women"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -62,9 +69,9 @@
             android:textColor="@color/bl"
             android:textSize="14sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/checkBox4"
-            app:layout_constraintStart_toStartOf="@+id/checkBox4"
-            app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+            app:layout_constraintEnd_toEndOf="@+id/check_men"
+            app:layout_constraintStart_toStartOf="@+id/check_men"
+            app:layout_constraintTop_toBottomOf="@+id/check_men" />
 
         <TextView
             android:id="@+id/textView4"
@@ -76,9 +83,9 @@
             android:textColor="@color/bl"
             android:textSize="14sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/checkBox3"
-            app:layout_constraintStart_toStartOf="@+id/checkBox3"
-            app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+            app:layout_constraintEnd_toEndOf="@+id/check_women"
+            app:layout_constraintStart_toStartOf="@+id/check_women"
+            app:layout_constraintTop_toBottomOf="@+id/check_women" />
 
         <TextView
             android:id="@+id/textView5"
@@ -90,7 +97,7 @@
             android:textColor="@color/bl"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/checkBox4"
+            app:layout_constraintStart_toStartOf="@+id/check_men"
             app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
         <SeekBar
@@ -99,7 +106,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
             android:thumb="@drawable/thumb_seekbar"
-            app:layout_constraintEnd_toEndOf="@+id/checkBox3"
+            app:layout_constraintEnd_toEndOf="@+id/check_women"
             app:layout_constraintStart_toStartOf="@+id/textView5"
             app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
@@ -180,7 +187,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
             android:thumb="@drawable/thumb_seekbar"
-            app:layout_constraintEnd_toEndOf="@+id/checkBox3"
+            app:layout_constraintEnd_toEndOf="@+id/check_women"
             app:layout_constraintStart_toStartOf="@+id/text_weight"
             app:layout_constraintTop_toBottomOf="@+id/text_weight" />
 
@@ -249,6 +256,28 @@
             app:layout_constraintEnd_toEndOf="@+id/textMax"
             app:layout_constraintTop_toBottomOf="@+id/textMax"
             app:srcCompat="@drawable/btn_next" />
+
+        <ImageView
+            android:id="@+id/img_men"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/check"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/check_men"
+            app:layout_constraintTop_toTopOf="@+id/check_men" />
+
+        <ImageView
+            android:id="@+id/img_women"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/check"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/check_women"
+            app:layout_constraintTop_toTopOf="@+id/check_women" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
