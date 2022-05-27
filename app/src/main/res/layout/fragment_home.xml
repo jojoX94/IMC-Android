@@ -8,14 +8,355 @@
     android:backgroundTint="@color/white"
     tools:context="com.futurmap.imc.HomeFragment">
 
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="@string/for_back_in_backstack"
+        android:src="@drawable/left_action"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/dm_sans"
+        android:text="@string/hello"
+        android:textColor="@color/bl"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Home fragment"
-        android:textSize="50sp"
+        android:fontFamily="@font/dm_sans_bold"
+        android:text="@string/tanvir"
+        android:textColor="@color/bl"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/warning_for_user"
+        android:src="@drawable/ic_alert"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/dm_sans"
+        android:text="@string/you_haven_t_checked_out_the_app_recently_do_some_workouts"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/dm_sans_medium"
+        android:text="3 days ago"
+        android:textColor="#70061428"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_heart"
+        android:layout_width="137dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FBECF0"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/ic_heart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/dm_sans"
+                android:text="Heart Rate"
+                android:textColor="#D2416E"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView3"
+                app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/dm_sans_bold"
+                android:text="70"
+                android:textColor="#D2416E"
+                android:textSize="40sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@+id/imageView3"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/dm_sans"
+                android:text="bpm"
+                android:textColor="#D2416E"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/textView14"
+                app:layout_constraintStart_toEndOf="@+id/textView14" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_bolt"
+        android:layout_width="137dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#F1ECFA"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintStart_toEndOf="@+id/card_heart"
+        app:layout_constraintTop_toTopOf="@+id/card_heart">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/img_bolt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/ic_bolt"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_bolt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/dm_sans"
+                android:text="Exercice"
+                android:textColor="#7042C9"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/img_bolt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img_bolt"
+                app:layout_constraintTop_toTopOf="@+id/img_bolt" />
+
+            <TextView
+                android:id="@+id/lbl_bolt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/dm_sans_bold"
+                android:text="24"
+                android:textColor="#7042C9"
+                android:textSize="40sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@+id/img_bolt"
+                app:layout_constraintTop_toBottomOf="@+id/img_bolt" />
+
+            <TextView
+                android:id="@+id/lbl_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/dm_sans"
+                android:text="min"
+                android:textColor="#7042C9"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/lbl_bolt"
+                app:layout_constraintStart_toEndOf="@+id/lbl_bolt" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_sleep"
+        android:layout_width="137dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="21dp"
+        android:backgroundTint="#E8F2FB"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintStart_toStartOf="@+id/card_bolt"
+        app:layout_constraintTop_toBottomOf="@+id/card_heart">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/img_sleep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/ic_sleep"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_sleep"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/dm_sans"
+                android:text="Sleep"
+                android:textColor="#197BD2"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/img_sleep"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img_sleep"
+                app:layout_constraintTop_toTopOf="@+id/img_sleep" />
+
+            <TextView
+                android:id="@+id/lbl_sleep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/dm_sans_bold"
+                android:text="8"
+                android:textColor="#197BD2"
+                android:textSize="40sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@+id/img_sleep"
+                app:layout_constraintTop_toBottomOf="@+id/img_sleep" />
+
+            <TextView
+                android:id="@+id/lbl_sleep_s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/dm_sans"
+                android:text="hrs"
+                android:textColor="#197BD2"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/lbl_sleep"
+                app:layout_constraintStart_toEndOf="@+id/lbl_sleep" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_walk"
+        android:layout_width="137dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="21dp"
+        android:backgroundTint="#E7F7F7"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintStart_toStartOf="@+id/card_heart"
+        app:layout_constraintTop_toBottomOf="@+id/card_heart">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/img_walk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/ic_flag"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_walk"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/dm_sans"
+                android:text="Walking"
+                android:textColor="#0DB1AD"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/img_walk"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img_walk"
+                app:layout_constraintTop_toTopOf="@+id/img_walk" />
+
+            <TextView
+                android:id="@+id/lbl_walk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/dm_sans_bold"
+                android:text="10"
+                android:textColor="#0DB1AD"
+                android:textSize="40sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@+id/img_walk"
+                app:layout_constraintTop_toBottomOf="@+id/img_walk" />
+
+            <TextView
+                android:id="@+id/lbl_walk_s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/dm_sans"
+                android:text="km"
+                android:textColor="#0DB1AD"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/lbl_walk"
+                app:layout_constraintStart_toEndOf="@+id/lbl_walk" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
