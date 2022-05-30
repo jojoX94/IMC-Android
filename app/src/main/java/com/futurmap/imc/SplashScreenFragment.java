@@ -91,11 +91,6 @@ public class SplashScreenFragment extends Fragment {
         });
 
         // Button OnclickListener
-        btnEnter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                navController.navigate(R.id.action_splashScreenFragment_to_homeFragment);
-            }
-        });
+        btnEnter.setOnClickListener(v -> navController.navigate(R.id.action_splashScreenFragment_to_homeFragment));
     }
 }
